@@ -1,13 +1,13 @@
-package log
+package Ilog
 
 type Level int8
 
 const (
-	Debug Level = iota - 1
-	Info
-	Warn
-	Error
-	Fatal
+	DebugLevel Level = iota - 1
+	InfoLevel
+	WarnLevel
+	ErrorLevel
+	FatalLevel
 )
 
 type ILogger interface {
