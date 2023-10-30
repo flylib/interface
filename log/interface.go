@@ -1,4 +1,4 @@
-package Ilog
+package log
 
 type Level int8
 
