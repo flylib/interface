@@ -20,6 +20,7 @@ const (
 )
 
 type ICodec interface {
+	MIMEType() string
 	Marshal(v any) (data []byte, err error)
 	Unmarshal(data []byte, v any) error
 }
