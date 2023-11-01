@@ -3,7 +3,7 @@ package mq
 type MessageHandler func(IMessage)
 
 type IBroker interface {
-	Connect() error
+	Connect(url string) error
 	Close() error
 	Publish(topic string, v any) error
 	Subscribe(topic string, handler MessageHandler) error
