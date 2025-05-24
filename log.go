@@ -1,4 +1,4 @@
-package ilog
+package connector
 
 type Level int8
 
@@ -11,11 +11,11 @@ const (
 )
 
 type ILogger interface {
-	Debug(args ...any)
-	Info(args ...any)
-	Warn(args ...any)
-	Error(args ...any)
-	Fatal(args ...any)
+	Debug(str string, args ...any)
+	Info(str string, args ...any)
+	Warn(str string, args ...any)
+	Error(str string, args ...any)
+	Fatal(str string, args ...any)
 
 	Debugf(format string, args ...any)
 	Infof(format string, args ...any)

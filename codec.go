@@ -1,4 +1,4 @@
-package codec
+package connector
 
 // MIME type的缩写为(Multipurpose Internet Mail Extensions)代表互联网媒体类型(Internet media type)
 /**type有下面的形式。
